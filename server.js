@@ -5,6 +5,8 @@ const cardRoutes = require('./routes/cards');
 const authRoutes = require('./routes/auth');
 const passport = require('passport');
 
+require('./config/passport')(passport);
+
 const app = express();
 app.use(cors());
 app.use(express.json());
